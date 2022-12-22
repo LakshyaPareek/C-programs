@@ -1,0 +1,43 @@
+swapping:
+
+#include<stdio.h>
+#include<conio.h>
+void swap(int,int);
+void main()
+{
+    int a,b;
+    a=10;
+    b=20;
+    swap(a,b);
+    printf("Values before swapping:a = %d and b = %d",a,b);
+}
+void swap(int x,int y)
+{
+    int t;
+    t=x;
+    x=y;
+    y=t;
+    printf("Values after swapping: a = %d and b = %d\n",x,y);
+}
+
+swapping by pointer:
+
+#include<stdio.h>
+#include<conio.h>
+void swap(int*,int*);
+void main()
+{
+    int a,b;
+    a=10;
+    b=20;
+    printf("Values before swapping: a = %d,b = %d\n",a,b);
+    swap(&a,&b);
+    printf("Values after swapping: a = %d,b = %d",a,b);
+}
+void swap(int *x,int *y)
+{
+    int t;
+    t = *x;
+    *x = *y;
+    *y = t;
+}
