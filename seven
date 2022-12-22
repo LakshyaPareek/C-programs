@@ -1,0 +1,59 @@
+addition of 2 one dimension arrays
+
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+    int x[3], y[3], z[3],i ;
+    printf("THE ELEMENTS OF ARRAY X ARE :\n");
+    for (i=0; i<3; i++)
+    {
+        scanf("%d",&x[i]);
+    }
+    printf("THE ELEMENTS OF ARRAY Y ARE :\n");
+    for (i = 0; i < 3; i++)
+    {
+        scanf("%d",&y[i]);
+    }
+    printf("THE sum of two arrays is:\n");
+    for (i=0;i<3; i++)
+    {
+        z[i] = x[i]+y[i];
+        printf("%d\n",z[i]);
+    }
+}
+
+
+addition of 2 two dimension arrays
+
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+    int x[2][2], y[2][2], z[2][2],i,j;
+    printf("THE ELEMENTS OF ARRAY X ARE :\n");
+    for (i=0; i<2; i++)
+    {
+        for (j=0;j<2; j++)
+        {
+            scanf("%d",&x[i][j]);
+        }
+    }
+    printf("THE ELEMENTS OF ARRAY Y ARE :\n");
+    for (i = 0; i < 2; i++)
+    {
+        for (j=0; j<2; j++)
+        {
+            scanf("%d",&y[i][j]);
+        }
+    }
+    printf("THE sum of two arrays is:\n");
+    for (i=0;i<2; i++)
+    {
+        for (j=0; j<2; j++)
+        {
+            z[i][j] = x[i][j]+y[i][j];
+            printf("%d\n",z[i][j]);
+        }
+    }
+}
