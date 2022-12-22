@@ -1,0 +1,69 @@
+string copy
+
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+    char str1[10], str2[10],i;
+    printf("Enter string 2:\n");
+    scanf("%s",&str2);
+    for (i=0; str2[i]!='\0'; i++)
+    {
+        str1[i]=str2[i];
+    }
+    str1[i]='\0';
+    printf("String is = %s \t\n",str1);
+    printf("no. of characters = %d", i);
+}
+
+string comparison
+
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+    char str1[10], str2[10];
+    int i;
+    printf("enter str1:");
+    scanf("%s",&str1);
+    printf("enter str2:");
+    scanf("%s",&str2);
+    i=0;
+    while (str1[i]==str2[i]&&str1[i]!='\0'&&str2[i]!='\0')
+    {
+        i=i+1;
+    }
+    if (str1[i]=='\0'&&str2[i]=='\0')
+    {
+        printf("strings are equal");
+    }
+    else
+    {
+        printf("strings aren't equal");
+    }
+    
+  
+  string concatenation
+  
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+    char frst_nm[10],last_nm[10],nm[30];
+    int i,j;
+    printf("enter first name:");
+    scanf("%s",&frst_nm);
+    printf("enter last name:");
+    scanf("%s",&last_nm);
+    for (i=0;frst_nm[i]!='\0'; i++)
+    {
+        nm[i]=frst_nm[i];
+    }
+    nm[i]=' ';
+    for (j=0;last_nm[j]!='\0'; j++)
+    {
+        nm[i+j+1]=last_nm[j];
+    }
+    nm[i+j+1]='\0';
+    printf("string is = %s",nm);
+}
