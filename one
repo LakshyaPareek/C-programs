@@ -1,0 +1,65 @@
+Area and perimeter of rectangle
+
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+    int len, wdt, area, primtr;
+    scanf("%d", &len);
+    scanf("%d", &wdt);
+    area = len*wdt;
+    primtr = 2*(len + wdt);
+    printf("The area of the rectangle is = %d", area);
+    printf("\nThe perimeter of the rectangle is = %d", primtr);
+}
+
+Area and perimeter of circle
+
+#include<stdio.h>
+#include<conio.h>
+#include<math.h>
+
+void main()
+{
+    float  r, area, primtr, r2; 
+    scanf("%f", &r);
+    const float pi = 3.1415;
+    #define pi 3.1415
+    r2 = pow(r, 2);
+    area = pi * r2;
+    primtr = 2*pi*r;
+    printf("Area of circle is = %f", area);
+    printf("\nPerimeter of circle is = %f", primtr);
+}
+
+
+Largest of the two numbers
+
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+    int a,b,max;
+    printf("ENTER A:");
+    scanf("%d",&a);
+    printf("ENTER B:");
+    scanf("%d",&b);
+    max = ((a>b)?a:b);
+    printf("The largest no. is = %d", max);
+}
+
+
+Largest of the three numbers
+
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+    int a,b,c,max;
+    scanf("%d",&a);
+    scanf("%d",&b);
+    scanf("%d",&c);
+    max = ((a>b && a>c)?a:(b>c)?b:c);
+    printf("The largest no. is = %d", max);
+
+}
