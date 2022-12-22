@@ -1,0 +1,56 @@
+algebraic sum 
+
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+    int x,y,z,sum;
+    printf("Enter x:");
+    scanf("%d",&x);
+    printf("Enter y:");
+    scanf("%d",&y);
+    printf("Enter z:");
+    scanf("%d",&z);
+    sum = (x + y) / z ;
+    printf("The answer for given expression is = %d",sum);
+}
+
+simple interest 
+
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+    float p,r,t,si;
+    printf("Principal Amount:");
+    scanf("%f", &p);
+    printf("Rate:");
+    scanf("%f", &r);
+    printf("Time:");
+    scanf("%f", &t);
+    si = p*r*t / 100;
+    printf("Simple interest = %f", si);
+}
+
+
+compound interest
+
+#include<stdio.h>
+#include<conio.h>
+#include<math.h>
+void main()
+{
+    float a,p,r,t,x,y,ci;
+    printf("Enter principal amount:");
+    scanf("%f",&p);
+    printf("Enter rate:");
+    scanf("%f",&r);
+    printf("Enter time:");
+    scanf("%f",&t);
+    x = (1 + (r/100));
+    y = pow(x,t);
+    a = p*y;
+    printf("Amount : %f",a);
+    ci = a-p;
+    printf("\nThe compound interest is : %f", ci);
+}  
